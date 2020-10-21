@@ -24,3 +24,53 @@ There are three primary **Entities** of IAM
 
 ## IAM Federation
 Provisions the integration of Active directory using **SAML standard** with IAM. Used for login into AWS using company's credentials.
+
+## AWS Directory services
+* Family of managed services used for connecting AWS resources to on-premise active directory.
+* Allows for single sign on to domain joined ec2s using corporate credentials.
+* 2 domain controllers in their own AZ
+* AD Trust can be used to extend existing AD to on-premise infrastructure.
+
+## Simple AD
+* Standalone managed service
+* Basic AD features
+* Small <= 500; Large <=5000 users
+* Easier to manage EC2 
+* Linux integration to LDAP
+* Can't join this to on premise
+
+## AD Connector
+* Acts as directory gateway or proxy for on-premise AD
+* Helps avoid caching information in the cloud
+* Can join existing EC2 instances to on premise domain
+
+## Amazon Resource Name - ARN
+Uniquely defines a resource
+Syntax: `arn:partition:service:region:account_id:resource_type/resource`
+
+## IAM Policies
+Are JSON document which defines permissions. It is a list of statements.
+- Any permissions which are not explicitly allowed are implicitly denied.
+- If a policy explictly denies an action, that overrides any other policies.
+- All the policies are aggreagated when AWS evaluates the permission.
+
+### Identity Policy
+- Are attached to user, group or role.
+- Defines what identity can do.
+### Resource Policies
+- Attached to resources such EC2 instances, S3 buckets etc.
+- Who has access to the resource
+### Permission Boundaries
+- Used for delegating administration to other users.
+- Can be used for Users and Roles 
+- It is a feature for using a managed policy to set the max permission that Identity based policy can grant to IAM entity.
+- Is used for preventing priviledge escalation broad permissions.
+- An action is allowed only when it is allowed by identity based policy and permission boundary.
+ 
+ ## Resource Access Manager - RAM
+ Is used for sharing the resources betwenn 2 or more accounts. Organization can have multiple accounts. Resources can be shared between those accounts using RAM.
+
+ ## AWS Single Sign On
+ - Allows for Active Directory and SAML integration
+ - Use existing identities to log in to AWS and 3rd party applications.
+ - Can be used for account level persmissions

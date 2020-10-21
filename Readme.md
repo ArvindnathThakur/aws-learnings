@@ -114,3 +114,5 @@ Security service which uses ML and Natural language processing to discover, clas
 | DAX               | DynamoDB Accelerator |
 | DMS               | Database Migration Service |
 | PITR              | Point in time recovery |
+| ARN               | Amazon Resource Name |
+| RAM               | Resource Access Manager |
