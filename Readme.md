@@ -25,7 +25,6 @@ AWS's content delivery network.
 
 * Premium content can be delivered using signed URl(for a file) or Cookie (for multiple files)
 
-
 # Storage Gateway
  Used for caching S3 locally. It is virtual or physical device used for replicating data into AWS
 
@@ -116,3 +115,5 @@ Security service which uses ML and Natural language processing to discover, clas
 | PITR              | Point in time recovery |
 | ARN               | Amazon Resource Name |
 | RAM               | Resource Access Manager |
+| IGW               | Internet gateway |
+| NAT               | Network Address Translation |
