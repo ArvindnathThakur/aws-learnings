@@ -83,4 +83,4 @@ Are JSON document which defines permissions. It is a list of statements.
 ### IAM Access Advisor
 * User level
 * Lists the service permission granted to a user and when the services were last accessed.
-* 
+* Can be used for auditing permissons
