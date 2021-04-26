@@ -74,3 +74,13 @@ Are JSON document which defines permissions. It is a list of statements.
  - Allows for Active Directory and SAML integration
  - Use existing identities to log in to AWS and 3rd party applications.
  - Can be used for account level persmissions
+
+## IAM Security Tools
+### IAM Credentials Report
+* Account level
+* Lists all account's users and their statuses.
+
+### IAM Access Advisor
+* User level
+* Lists the service permission granted to a user and when the services were last accessed.
+* 
